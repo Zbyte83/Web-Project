@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Riera Cañellas">
+    <meta name="description" content="Web de Zbyte">
+    <meta name="Keywords" content="html, css and JS">
+    <link rel="icon" type="image/png" href="../favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="../favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" size="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" href="../favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+
+    <title>Zbyte - Técnico Informático</title>
+  </head>
+  <body>
+
+    <header class="header" >
+      <nav class="navTop container">
+        <div class="nav__logo" id="inicio"> <!-- Logo -->
+          <a href="#inicio">
+            <img src="./Logo/Logotipo _ZBYTE_ con figura encapuchada_sinFondo.png" alt="logo" width="90px">
+          </a>        
+        </div>
+
+        <label for="menu" class="nav__label">
+          <input type="checkbox" id="menu"><i class="fas fa-bars fa-fw" id="themeIconMenu"></i>
+        </label>
+        
+        <div class="navTop__main"> <!-- Seccion Menu -->
+          <ul class="navTop__menu">
+            <li class="navTop__link"><a class="active" href="index.html">Inicio</a></li>
+            <li class="navTop__link"><a href="service.html" target="_self">Servicios</a></li>
+            <li class="navTop__link"><a href="about.html" target="_self">Sobre Zbyte</a></li>
+            <li class="navTop__link--contact"><a href="contact.html" target="_blank">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>    
+    <main class="main container__main">
+      <section class="section__header">
+        <h1>SOLUCIONES INFORMÁTICAS</h1>
+        <p>Reparaciones de PCs, Instalaciones de Redes, soporte remoto<br>y venta de piezas. Servicio técnico con atención<br>personalizada y eficaz</p>
+      </section>
+
+      <section class="section__cards">
+        <div class="section__card">
+          <i class="fas fa-desktop fa-fw"></i>
+          <h3>REPARACIONES PC</h3>
+          <p>Diagnóstico, limpieza,<br> reemplazo de compon-<br>entes y optimización<br> de sistemas</p>
+        </div>
+
+        <div class="section__card">
+          <i class="fas fa-globe fa-fw"></i>
+          <h3>REDES E INTERNET</h3>
+          <p>Instalación y confi-<br>guración de redes LAN<br>LAN-Fi para hogares<br>y oficinas</p>
+        </div>
+
+        <div class="section__card">
+          <i class="fas fa-headset fa-fw"></i>
+          <h3>SOPORTE REMOTO</h3>
+          <p>Ayuda técnicaa<br> distancia para revisa<br> problemas urgentes<br> sin esperas</p>
+        </div>
+
+        <div class="section__card">
+          <i class="fas fa-gear fa-fw"></i>
+          <h3>MONTAJE Y VENTA</h3>
+          <p>Vénta de piezas y<br> ensamblaje dé PCs<br> personalizados con<br> asesoria experta</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <h5>Contacto:</h5>
+      <div class="footer__contact">
+        <i class="fab fa-facebook-f fa-fw"></i>
+        <i class="fab fa-whatsapp fa-fw"></i>
+        <i class="fas fa-envelope fa-fw"></i>
+      </div>
+      <p>&copy; 2025 <span>Zbyte</span>. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

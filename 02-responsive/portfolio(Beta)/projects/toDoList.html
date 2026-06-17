@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="../assets/css/toDoList.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+			<title>To Do List</title>
+	</head>
+	<body>
+	
+		<div class="container">
+			<!-- INICIO BLOQUE CABECERA -->
+			<header class="header__container">
+				<h1>MIS TAREAS</h1>			
+			</header>
+			<!-- FIN BLOQUE CABECERA -->
+			<!-- INICIO BLOQUE TO DO LIST -->
+			<main class="main">
+
+				<section class="section__container"> <!-- BLOQUE PRINCIPAL -->
+					<div class="input__container">
+						<input type="text" id="inputText" placeholder="Agregar Tarea"><!--Añadir tarea -->
+						<button class="add__btn" id="addBtn">Añadir</button><!-- Boton añadir -->
+					</div>
+					<!-- BLOQUE LISTA DE TAREAS -->
+					<ul class="todo__list" id="todoList"> 
+
+						<!-- Lista -->
+						<!--<li class="text__item" id="li"> 
+							<input type="checkbox" class="list__check" id="todo">
+							
+							<label class="item__check" for="todo"></label>
+							
+							<label class="list__text" for="todo"></label>
+
+							<button class="btn__delete" id="btnDelete"><i class="fa-solid fa-trash-can"></i></button>
+						</li>-->
+					</ul>
+				</section>
+			</main>
+			<!-- FIN BLOQUE TO DO LIST -->
+		</div>	
+
+		<script src="../assets/js/toDoList.js"></script>
+	</body>
+</html>

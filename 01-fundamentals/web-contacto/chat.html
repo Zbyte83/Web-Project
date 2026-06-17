@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zbyte - Técnico Informático</title>
+  <link rel="icon" href="🖥️">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Mono:wght@300;400;600&display=swap');
+
+    :root {
+      --bg-dark: #121212;
+      --section-bg: #1E1E1E;
+      --text-main: #ffffff;
+      --text-secondary: #aaaaaa;
+      --accent: #00BFA6;
+      --border-color: #2A2A2A;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1A1A1A;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 400;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .services-preview {
+      background-color: var(--section-bg);
+      padding: 3rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: #181818;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      transition: transform 0.2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    .service-card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #101010;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    .social-links a {
+      color: var(--accent);
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Zbyte</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="sobre.html">Sobre Zbyte</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Soluciones Informáticas Profesionales</h1>
+    <p>Reparación de PCs, instalaciones de redes, soporte remoto y venta de piezas. Servicio técnico con atención personalizada y eficaz.</p>
+  </section>
+
+  <section class="services-preview">
+    <div class="service-card">
+      <h3>Reparación de PC</h3>
+      <p>Diagnóstico, limpieza, reemplazo de componentes y optimización de sistemas.</p>
+    </div>
+    <div class="service-card">
+      <h3>Redes e Internet</h3>
+      <p>Instalación y configuración de redes LAN/Wi-Fi para hogares y oficinas.</p>
+    </div>
+    <div class="service-card">
+      <h3>Soporte remoto</h3>
+      <p>Ayuda técnica a distancia para resolver problemas urgentes sin esperas.</p>
+    </div>
+    <div class="service-card">
+      <h3>Montaje y Venta</h3>
+      <p>Venta de piezas y ensamblaje de PCs personalizados con asesoría experta.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contacto: 
+      <span class="social-links">
+        <a href="https://facebook.com/zbyte" target="_blank">Facebook</a> | 
+        <a href="https://wa.me/123456789" target="_blank">WhatsApp</a> | 
+        <a href="mailto:contacto@zbyte.com">Email</a>
+      </span>
+    </p>
+    <p>&copy; 2025 Zbyte. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

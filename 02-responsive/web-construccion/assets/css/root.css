@@ -1,0 +1,60 @@
+:root {
+
+    /* Tus colores originales del logo */
+    --color-background: rgb(236, 226, 226);
+    --primary-color: #c52026;
+    --secundary-color: #424951;
+
+    /* Variaciones añadidas para diseño web */
+    --color-surface: #ffffff;         /* Para tarjetas y contenedores blancos */
+    --text-main: #424951;             /* Tu gris oscuro para máxima legibilidad */
+    --text-muted: #cad1db;            /* Gris medio para textos secundarios */
+    --accent-warm: #d4a373;           /* Tono madera/arena para acabados y confianza */
+    
+    /* Estados interactivos */
+    --primary-color-hover: #c46b6e;   /* Rojo más oscuro para cuando pasas el ratón por encima */
+    
+    /* Estilo tipografía */
+    --font-display: 'Bebas Neue', sans-serif; /* Títulos, logo, stats, nums decorativos */
+    --font-serif:   'Lora', serif;            /* Párrafos, descripción hero, firma */
+    --font-ui:      'DM Sans', sans-serif;    /* Navegación, labels, formulario, botones */
+
+    /* Escalas de tamaño */
+    --text-hero-title:    clamp(3.5rem, 7vw, 5rem); /* H1 hero */
+    --text-section-title: clamp(2.5rem, 5vw, 3.5rem); /* H2 de sección */
+    --text-desc-title: clamp(1.5rem, 4vw, 2.2rem); /* Texto del titulo */
+    --text-stat-num:      2.8rem;  /* Números en grid de stats */
+    --text-badge-num:     2.2rem;  /* Número en badge circular */
+    --text-logo:          1.6rem;  /* Logo nav */
+    --text-firma:         1.6rem;  /* Firma cursiva */
+    --text-form-title:    1.8rem;  /* Título del formulario */
+    --text-servicio-name: 1.5rem;  /* Nombre de servicio en card */
+    --text-servicio-num:  3.5rem;  /* Número decorativo en card */
+    --text-body-lg:       1.5rem; /* Descripción hero */
+    --text-body:          1.2rem;    /* Párrafos generales */
+    --text-body-sm:       0.9rem;  /* Inputs formulario */
+    --text-cta:           0.85rem; /* Botón CTA y nav links */
+    --text-desc:          0.88rem; /* Descripción servicios */
+    --text-step:          0.85rem; /* Descripción pasos */
+    --text-label:         0.72rem; /* Labels de sección y formulario */
+    --text-eyebrow:       0.78rem; /* Eyebrow hero */
+    --text-stat-label:    0.72rem; /* Label bajo stat number */
+    --text-meta:          0.78rem; /* Footer copy y cert */
+    --text-badge-text:    0.6rem;  /* Texto bajo número del badge */
+    --text-zona:          0.82rem; /* Tags de zonas */
+
+      /* Padding interno de componentes */
+    --space-1:   0.3rem;  /* Micro gaps (stat-label margin-top) */
+    --space-2:   0.5rem;  /* Gaps menores (form-group label mb) */
+    --space-3:   0.8rem;  /* Gap items eyebrow, section-label */
+    --space-4:   1rem;    /* Padding tags, contact-item, stat-box */
+    --space-5:   1.2rem;  /* Margin entre elementos (hero-eyebrow mb) */
+    --space-6:   1.5rem;  /* Margin títulos (hero-title mb, badge pos) */
+    --space-7:   2rem;    /* Form title mb, firma mt */
+    --space-8:   2.5rem;  /* Nav padding h, hero CTA mb, footer padding */
+    --space-9:   3rem;    /* Hero image placeholder padding, form wrap padding */
+    --space-10:  4rem;    /* Sección headers mb, nav-links gap desktop */
+    --space-11:  5rem;    /* Padding lateral secciones desktop */
+    --space-12:  7rem;    /* Padding vertical secciones principales */
+    --space-13:  8rem;    /* Hero left padding-top */
+}

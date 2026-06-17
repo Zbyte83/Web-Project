@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./assets/css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<script src="./assets/js/app.js" defer></script>
+		<title>PortaFolio</title>
+	</head>
+	<body>
+		<div class="container__layout">
+			<!-- CONTENEDOR NAVBAR -->
+			<nav class="navbar" id="navbar">
+				<div class="nav__container"> <!-- ZONA CONTENIDO MENU -->
+					<div class="nav__logo">
+						<img class="nav__img" src="../logo/Logo.png" alt="logo">
+					</div>
+	
+					<ul class="nav__links" id="navLinks"> <!-- MENU PRINCIPAL-->
+						<li><a href="index.html">Inicio</a></li>
+						<li class="dropdown" id="dropdownToggle"><a href="#">Proyectos<i class="fa-solid fa-caret-down"></i></a>
+							<ul class="dropdown__menu"> <!-- SUBMENU -->
+								<li><a href="./projects/toDoList.html" target="_blank">To Do List</a></li>
+								<li><a href="#">Generador de Colores</a></li>
+							</ul>
+						</li>
+						<li><a href="#about">Sobre Mi</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+
+					<div class="nav__btn"> <!-- MODO OSCURO/CLARO-->
+						<button class="btn__theme" id="btnTheme" aria-label="Cambiar tema">
+							<i class="fa-solid fa-moon"></i>
+						</button>
+				
+						<button class="btn__burger" id="btnBurger" aria-label="Abrir menú"><!-- MENU RESPONSIVE-->
+							<span class="bar1"></span>
+							<span class="bar2"></span>
+							<span class="bar3"></span>
+						</button>
+					</div>
+				</div>
+			</nav>
+			<!-- FIN CONTENEDOR NAVBAR -->
+
+			<!-- INICIO BLOQUE CABECERA -->
+			<header class="header">
+				<div class="header__title"><!-- TITULO CABECERA -->
+					<h1>Hola, soy <span>Gabriel</span>.</h1>
+					<p class="header__text">
+						Soy un desarrollador que está aprendiendo <span>HTML, CSS y JavaScript</span>, que está creando proyectos creativos y eficientes.
+					</p>
+					<div class="header__btn">
+						<button class="btn__project">Ver Proyectos</button><!-- BOTON PROYECTOS -->
+					</div>
+				</div>
+
+				<div class="header__photo"><!-- IMAGEN -->
+					<img src="./assets/img/imagenCara.png" alt="Imagen Propia" class="imagen">
+				</div>			
+			</header>
+			<!-- FIN BLOQUE CABECERA -->
+
+			<!-- INICIO BLOQUE PRINCIPAL -->
+			<main class="main">
+
+				<!-- INIICO BLOQUE SECCION PROYECTOS -->
+				<section class="section__projects" id="project"> 
+					<div class="section__title"> <!-- Bloque Titulo -->
+						<h2>Proyetos destacados</h2>
+					</div>
+					<div class="section__content">
+						<div class="card__container"> <!-- Bloque Contenedor Tarjeta -->					
+							<div class="card__img"> <!-- Bloque Imagen -->
+								<img src="./assets/img/imgProject.png" alt="proyecto">
+							</div>
+
+							<div class="card__content"><!-- Bloque contenido Tarjeta -->
+								<h3>To Do List</h3>
+								<p>App para gestionar tareas de forma rápida y sencilla</p>
+								<a href="./projects/toDoList.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>								
+							</div>						
+						</div>
+
+						<!-- Copias de Tarjetas -->
+						<div class="card__container">					
+							<div class="card__img">
+								<img src="./assets/img/imagenPrueba.png" alt="proyecto">
+							</div>
+
+							<div class="card__content">
+								<h3>To Do List</h3>
+								<p>App para gestionar tareas de forma rápida y sencilla</p>
+								<a href=""><i class="fa-solid fa-arrow-right"></i></a>								
+							</div>						
+						</div>
+
+						<div class="card__container">					
+							<div class="card__img">
+								<img src="./assets/img/imagenPrueba.png" alt="proyecto">
+							</div>
+
+							<div class="card__content">
+								<h3>To Do List</h3>
+								<p>App para gestionar tareas de forma rápida y sencilla</p>
+								<a href=""><i class="fa-solid fa-arrow-right"></i></a>								
+							</div>						
+						</div>
+
+						<div class="card__container">					
+							<div class="card__img">
+								<img src="./assets/img/imagenPrueba.png" alt="proyecto">
+							</div>
+
+							<div class="card__content">
+								<h3>To Do List</h3>
+								<p>App para gestionar tareas de forma rápida y sencilla</p>
+								<a href=""><i class="fa-solid fa-arrow-right"></i></a>								
+							</div>						
+						</div>
+
+					</div>
+					
+
+					<div class="section__btn"><!-- BLOQUE BOTON ENLACE TODODS PROYCETOS-->
+						<button class="btn__project">Ver proyectos</button>
+					</div>
+				</section>
+				<!-- FIN BLOQUE SECCION PROYECTOS-->
+
+				<!-- INICIO BLOQUE SECCION SOBRE MI -->
+				<section class="section__about" id="about">
+					<h2>Sobre Mi</h2>
+
+					<div class="section__container">		
+						<div class="section__img">
+							<img src="./assets/img/imagenCara.png" alt="Imagen">
+						</div>		
+
+						<div class="section__text">
+							<p>Lorem ipsum, dolor sit amet consectetur a dipisicing elit. Ducimus necessitatibus facere, tenetur explicabo, fugiat rem alias reiciendis quaerat commodi odit unde consequatur autem cupiditate, vel repellendus adipisci quasi beatae officiis?<br>
+								<br>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque veniam dolorum deleniti maiores eligendi magnam delectus tempore. Unde consequatur harum blanditiis voluptas ratione, rem nesciunt tenetur sed est ut facere?
+							</p>
+						</div>											
+					</div>
+
+					<button class="btn__project">Más sobre mi</button>
+				</section>			
+				<!-- FIN BLOQUE SECCION SOBRE MI -->
+			</main>
+			<!-- FIN BLOQUE PRINCIPAL -->
+		</div>
+
+		<!-- INICIO BLOQUE PIE PAGINA -->
+		<footer class="footer" id="footer">
+			<div class="footer__content">
+				<div class="footer__logo"><!--BLOQUE LOGO/NOMBRE-->
+					<img class="footer__img" src="./assets/img/Logo.png" alt="logo">
+				</div>
+
+				<div class="footer__links"><!-- BLOQUE ENLACES DIRECTOS -->
+					<a href="./index.html" class="link">Inicio <span>|</span></a>
+					<a href="#project" class="link">Proyectos <span>|</span></a>
+					<a href="#about" class="link"> Sobre Mi</a>
+				</div>
+			
+		
+				<div class="footer__contact"><!-- BLOQUE ENLACES CONTACTO -->
+					<a href="" class="link">GitHub <span>|</span></a>
+					<a href="" class="link">LinkedIn <span>|</span></a>
+					<a href="" class="link">Email</a>
+				</div>				
+			</div>
+			<p class="footer__text">&copy; <span>2026 Gabriel</span> - Todos los derechos reservados</p>
+		</footer>		
+		<!-- FIN BLOQUE PIE PAGINA -->	
+
+		
+		
+	</body>
+	
+</html>

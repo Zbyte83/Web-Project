@@ -8,10 +8,10 @@ Este repositorio contiene diferentes páginas web y mini proyectos creados para 
 
 ```txt
 web-projects/
-├── assets/
+├── fundamentals/
+├── responsive/
 ├── components/
-├── projects/
-└── index.html
+└── applications
 ```
 
 ## Tecnologías
@@ -19,6 +19,7 @@ web-projects/
 - HTML5
 - CSS3
 - JavaScript
+- WebComponents
 
 ## Objetivo
 

@@ -1,0 +1,330 @@
+@import url("style.css");
+
+/* Query de index.html */
+
+@media(max-width: 768px) {
+
+  .container { /* Bloque General */
+    max-width: 786px;
+    margin: 0 auto;
+  }
+  
+  /* INICIO BLOQUE MENU */
+
+  nav.nav__bar { /* Bloque barra menu */
+    background-color: var(--color-blue);
+    height: 70px;
+    bottom: 0;
+    top: auto;
+  }
+
+    .nav__bar--menu { 
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 0;      
+    }
+
+    .nav__bar--home {
+      display: flex;
+      padding: 0.5rem;
+    }
+
+    .nav__bar--home img { /* Imagen Logo */
+      background-color: var(--bg-main);
+      border-radius: 50%;
+      width: 40px;
+      padding: 0.2rem;
+      margin-right: 0;
+      margin-left: 10px;
+    }
+
+    .nav__home--link {
+      position: relative;
+      margin-left: 50px;
+      color: var(--color-main);
+      opacity: 1;
+    }
+
+    .nav__menu--link {
+      position: relative;
+      color: var(--bg-main);    
+      font-size: 18px;
+      margin: 10px 12px;
+      font-weight: 500;
+      opacity: 1;
+      transition: all .5s ease-in-out;
+    }
+
+    .nav__menu--link:focus {
+      transform: scale(1.1);
+    }   
+
+    .nav__menu--wrapper {
+      margin: 10px 12px;
+    }
+
+    .nav__link--dropdown {
+      position: relative;
+      font-weight: 500;
+      font-size: 18px;      
+      color: var(--color-main);
+      opacity: 1;   
+      transition: all .5s ease-in-out;   
+    }
+
+    .nav__link--dropdown:focus {
+      color: #0000cd;
+      font-weight: 500;
+    }
+
+    .nav__link--dropdown i {
+      display: none;
+    }
+
+    .nav__menu--main { /* Animación menu principal */
+      background-color: var(--color-blue);
+      position: absolute;
+      bottom: 100%;
+      width: 100%;
+      height: 200px;
+      flex-direction: column;
+      align-items: flex-start;
+      opacity: .8;
+      transform: translateX(-100%);
+      transition: transform .9s ease-in-out;
+      z-index: 1000;    
+    }
+
+    .nav__menu--main.active {
+      transform: translateX(0);
+    }
+
+    .nav__menu--burger { /* Menu Burguer */
+      /*display: block;*/
+      margin-right: 50px;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--color-main);
+    }
+
+    .nav__menu--dropdown {
+      display: none;
+    }
+  
+  /* FIN BLOQUE MENU */
+
+  /* INICIO BLOQUE HEADER */
+
+  header.header { /* Bloque header */
+    margin-top: 10px;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;  
+  }
+
+   header.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0; 
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;    
+  }
+
+  .header__content {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__content--title {
+    font-size: 20px;
+    margin: 0 auto;
+  } 
+
+  .header__content--info {
+    margin: 30px 0 0 0;  
+    width: 100%;  
+    text-align: center;    
+    padding: 1rem;    
+  }
+
+  .header__content--info h4 {
+    font-size: 18px;  
+    margin: 0;  
+  }
+
+  .header__content--info p {
+    font-size: 14px;
+    margin: 20px 0 0 0;
+    line-height: 1.2rem;
+  }
+
+/* FIN BLOQUE HEADER */
+
+/* INICIO SECCIO MAIN */
+
+  main.main {
+    margin: 60px 0;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .section__content {
+    gap: 2.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .project__card {
+    flex:1 1 20%;
+  }
+
+  .project__title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .project__img {
+    width: 150px;
+    height: 80px;
+    margin-bottom: 10px;
+    transition: none;
+  }
+
+  .project__description {
+    font-size: .9rem;
+    line-height: 1rem;    
+  }
+
+
+/* FIN SECCION MAIN */
+
+
+/* INICIO BLOQUE FOOTER */
+
+  footer.footer {
+    margin-top: 0;
+    margin-bottom: 70px;
+    border-bottom: 2px solid var(--color-blue);
+  }
+
+  .footer__content  {
+    padding: 1rem;
+    background-color: none;    
+  }
+
+  .footer__content p {
+    font-size: 14px;
+  }
+
+  .footer__content--contact {
+    font-size: 14px;
+  }
+
+  .footer__content--contact a:focus {
+    color: var(--color-blue);
+  } 
+}
+
+@media(min-width: 769px) and (max-width:996px) {
+  .container {
+    max-width: 996px;
+    margin: 0 auto;
+  }
+
+/* INICIO NAV BAR */
+
+  .nav__bar--menu {
+    padding: .5rem;
+  }
+
+  .nav__menu--link { /* Links */
+    position: relative;  
+  }
+
+  .nav__menu--link::after { /* Animacion Links */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 50%;
+    bottom: -5px;
+    transform-origin: center;
+    transform:  translateX(-50%) scaleX(0);    
+    background-color: var(--color-blue);
+    transition: transform .5s ease;
+  }
+
+  .nav__menu--link:focus::after {
+    transform:  translateX(-50%) scaleX(1);
+  }
+
+  .nav__link--dropdown i {
+    display: none;
+  }
+
+/* FIN NAVBAR */
+
+/* INICIO HEADER */
+
+header.header {
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+header.header::after { /* Efecto sobra interior */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
+    z-index: -1;
+  }
+
+  .header__content {
+    padding: 1rem 2rem;
+  }
+
+  .header__content--title {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .header__content--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+
+  .header__content--info h4 {
+    font-size: 20px;
+  }
+
+  .header__content--info p {
+    font-size: 16px;
+  }
+
+/* FIN HEADER */
+}
+
+
+
